@@ -4,5 +4,6 @@ from django.apps import AppConfig
 class CheckoutConfig(AppConfig):
     name = 'checkout'
 
-    def ready(Self):
+    def ready(self):
         import checkout.signals
+
